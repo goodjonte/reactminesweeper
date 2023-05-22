@@ -1,12 +1,63 @@
-
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resetButton {
+  margin: 15px;
+}
 .grid {
-  width: 200px;
-  height: 160px;
+  border: 2px solid black;
+  width: 400px;
+  height: 320px;
 }
 .row {
-  height: 20px;
+  height: 40px;
   display: flex;
 }
 .cell {
-  width: 20px;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  width: 40px;
+  background-color: grey;
+}
+.cellClicked {
+  border: 2px solid #000;
+  text-align: center;  
+  font-size: 24px;
+  width: 40px;
+  background-color: white;
+}
+.cellRed {
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  width: 40px;
+  background-color: red;
+}
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+.numSpan {
+  pointer-events: none;
+}
+.wasBomb {
+  pointer-events: none;
+  color: white;
+  background-color: red;
+}
+.cellWasBomb {
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  width: 40px;
+  background-color: red;
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
