@@ -61,3 +61,42 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 425px) {
+  .grid {
+    border: 1px solid black;
+    width: 300px;
+    height: 240px;
+  }
+  .row {
+    height: 30px;
+    display: flex;
+  }
+  .cell {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    width: 30px;
+    background-color: grey;
+  }
+  .cellWasBomb {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    width: 30px;
+    background-color: red;
+  }
+  .cellClicked {
+    border: 1px solid #000;
+    text-align: center;  
+    font-size: 14px;
+    width: 30px;
+    background-color: white;
+  }
+  .cellRed {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 24px;
+    width: 30px;
+    background-color: red;
+  }
+}
