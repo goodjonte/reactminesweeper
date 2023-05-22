@@ -1,3 +1,4 @@
+/* App Styles */
 .App {
   display: flex;
   flex-direction: column;
@@ -6,6 +7,14 @@
 .resetButton {
   margin: 15px;
 }
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Game Grid Styling */
 .grid {
   border: 2px solid black;
   width: 400px;
@@ -15,6 +24,8 @@
   height: 40px;
   display: flex;
 }
+
+/* Cell Styling */
 .cell {
   border: 2px solid #000;
   text-align: center;
@@ -36,6 +47,13 @@
   width: 40px;
   background-color: red;
 }
+.cellWasBomb {
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  width: 40px;
+  background-color: red;
+}
 .hidden {
   display: none;
   pointer-events: none;
@@ -48,20 +66,11 @@
   color: white;
   background-color: red;
 }
-.cellWasBomb {
-  border: 2px solid #000;
-  text-align: center;
-  font-size: 24px;
-  width: 40px;
-  background-color: red;
-}
-.title {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+
+
+/* Small Screens */
 @media only screen and (max-width: 425px) {
+  /* Game Board Styling */
   .grid {
     border: 1px solid black;
     width: 300px;
@@ -71,6 +80,7 @@
     height: 30px;
     display: flex;
   }
+  /* Cell styles */
   .cell {
     border: 1px solid #000;
     text-align: center;
